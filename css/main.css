@@ -228,13 +228,7 @@ button:hover:after {
 /* Home-Section 1 */
 
 .container-fluid {
-	background-image: url('../img/1.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-	height: 732px
-	flex-wrap: wrap;
+	
 	
 }
 
@@ -361,7 +355,7 @@ button:hover:after {
 	background-color: #ABFFB4;
 	position: relative;
 	height: 100%;
-	opacity: 10
+	color: blue;
 	
 }
 
