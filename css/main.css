@@ -144,6 +144,7 @@ button {
   position: absolute;
   left: 22%;
   top: 70%;
+
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   background: #fff;
@@ -161,6 +162,7 @@ button {
   -webkit-transition: all 0.15s ease-out 0.15s;
   transition: all 0.15s ease-out 0.15s;
 }
+
 button:after, button:before {
   position: absolute;
   width: 100%;
@@ -228,7 +230,14 @@ button:hover:after {
 /* Home-Section 1 */
 
 .container-fluid {
-	
+	background: linear-gradient(to right,
+    green, blue, indigo, violet)
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 732px
+	flex-wrap: wrap;
 	
 }
 
@@ -281,7 +290,7 @@ button:hover:after {
 
 .container-fluid {
     /* The image used */
-    background-image: url("../img/1.jpg");
+    background-image: url("../img/home-hero.jpg");
 
     /* Set a specific height */
     min-height: 500px; 
@@ -305,7 +314,13 @@ button:hover:after {
 	margin:10px;
 	position: relative;
 	flex-wrap: wrap;
+	max-width:100%;
 
+
+	
+}
+article {
+	padding-bottom: 100px;
 }
 
 .project1-intro-img img {
@@ -313,27 +328,47 @@ button:hover:after {
 	filter: grayscale(100%);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+	width: 1440px;
+
+
 }
+
+
 .project1-intro-img:hover img {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
-}
-.project1-content {
-	padding-top: 50px
 	
-
 }
 
 
-.col-md-7 {
+.col-md-6 {
 	z-index: 1;
 	right: 40px;
+	max-width:100%;
+
+
+
+}
+
+.col-md-6 img {
+	z-index: 1;
+	right: 40px;
+	max-width:100%;
+
+
+	
+
 }
 
 .col-md-4 {
 	
 	z-index:2;
 	left: 200px;
+	right:200px;
+	max-width:100%;
+
+	
+
 		
 }
 
@@ -342,20 +377,17 @@ button:hover:after {
     margin-bottom: 0px;
 }
 
-/* Project 2 */
-
-.project2-content {
+.project-home-content {
 	padding-top: 50px
 	
 }
 
-
 /* About */
 .about-container-fluid {
-	background-color: #ABFFB4;
+	background-color: #22FBCC;
 	position: relative;
 	height: 100%;
-	color: blue;
+	color: black;
 	
 }
 
@@ -415,7 +447,7 @@ button:hover:after {
 
 /* Project 1 The Naoshima Project */
 
-.zoom{
+.zoom {
 	overflow: hidden;
 	padding-bottom: 100%;
 }
@@ -425,11 +457,10 @@ button:hover:after {
 	left: 50%;
 	max-width: 100%;
 	transform: translateX(-50%);
-
-
-
 }
-
+#zoom-1 {
+	background: #eebac6;
+}
 .container-fluid-project .scroll-down-btn {
 	position: absolute; 
 	right:0;
@@ -455,9 +486,6 @@ button:hover:after {
 	background-color: white;
 	box-shadow: 0px -10px 60px rgba(0,0,0,0.25);
 	margin: 0;
-
-
-
 	
 }
 
@@ -482,7 +510,8 @@ button:hover:after {
 
 .secondary-image img{
 	width:100%;
-	height:960px;
+	height:100%;
+	
 	padding: 0px 20px 100px 20px;
 }
 
@@ -507,6 +536,8 @@ left: 0;
   position: fixed;
   z-index: 100;
   box-shadow: 0px -10px 60px rgba(0,0,0,0.25);
+  padding-bottom: 15px;
+
   
   
 }
@@ -564,7 +595,7 @@ left: 0;
 	padding-bottom: 40px;
 }
 
-.secondary-content-1 h2 , .secondary-content-2 h2, .design-content-4 h2{
+.secondary-content-1 h2 , .secondary-content-2 h2, .design-content-3 h2{
 	font-size: 24px;
 }
 
@@ -589,11 +620,11 @@ left: 0;
 	
 	padding-top: 40px;
 	padding-bottom: 80px;
-		background-color: #ECECEC;
+	background-color: #eebac6;
 	
 
 }
-.design-content-1 h2 {
+.design-content-1 h2{
 	margin-top: 40px;
 	padding-bottom: 40px;
 }
@@ -610,11 +641,14 @@ left: 0;
 .seconday-content-center h3 {
 	margin-top: 0px;
 }
+.design-content-gallery-center img {
+	padding-top: 40px;
+}
 .design-content-3 {
-
+	width:100%;
 	padding-top: 80px;
 	padding-bottom: 80px;
-	background-color: #ECECEC;
+	background-color: #eebac6;
 
 }
 
@@ -642,13 +676,15 @@ left: 0;
 	width: 220px;
 	padding-top: 15px;
 	padding-left: 30px;
+	margin:40px 0px;
+
 	
 
 }
 .project-next-btn {
-	position: relative;
+	position: absolute;
 	top:10;
-	float: right;
+	right:40px;
 	bottom:10;
 	margin: 0px 150px;
 	margin-bottom: 100px;
@@ -657,5 +693,113 @@ left: 0;
 	padding-top: 2px;
 
 }
+
+.project-back-btn button {
+	
+	display: flex;
+	width: 220px;
+	padding-top: 15px;
+	padding-left: 30px;
+	margin-top:50px;
+	margin:40px 0px;
+	
+
+}
+.project-back-btn {
+	position: relative;
+	top:10;
+	float: left;
+	left: 40px;
+	bottom:10;
+	margin: 0px 150px;
+	margin-bottom: 100px;
+}
+.project-back-btn h4 {
+	padding-top: 2px;
+
+}
+/* Project 2 SAP Run Live */
+
+#zoom-2 {
+	background: #ffc843;
+}
+#project-overview-intro {
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 10px;
+    padding-bottom: 80px;
+
+
+}
+
+#project-overview-intro div {
+	border-left: 1px solid #C8C9CC;
+	padding-left: 40px;
+}
+
+#project-overview-intro h3 {
+	font-size: 20px;
+	margin-top: 0;
+}
+
+.design-content-gallery-1 {
+	padding-right: 10px
+}
+.design-content-gallery-2 {
+	padding-left: 10px
+}
+#project-2 .design-content-1 {
+	background-color: white;
+}
+
+#project-2 .design-content-2 {
+	background-color: #ffc843;
+	margin-bottom:0; 
+
+}
+
+#project-2 .design-content-3 {
+	padding-bottom: 0;
+	background-color: #fafafa;
+	margin-top: 0;
+	padding-top: 120px;
+	text-align: center
+
+
+
+}
+
+#project-2 .design-content-3 h5 {
+	padding-bottom: 0;
+}
+#project-2 .project-content {
+	background-color: #fafafa;
+	margin-bottom: 0;
+
+}
+
+#project-2 .secondary-image img {
+	padding: 0px 20px;
+}
+
+#project-2 .design-content-gallery-center img
+{
+	padding-top: 0;
+}
+#project-2 .design-content-4 {
+	padding: 0px 60px 100px 0px;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 

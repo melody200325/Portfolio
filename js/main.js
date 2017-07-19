@@ -23,12 +23,12 @@ $(window).on('scroll', function() {
 }); 
 
 
-$(window).scroll(function() {
-  var scroll = $(window).scrollTop();
-	$(".zoom img").css({
-		transform: 'translate3d(-50%, -'+(scroll/300)+'%, 0) scale('+(100 + scroll/20)/100+')',
-		// "-webkit-filter": "blur(" + (scroll/200) + "px)",
-		filter: "blur(" + (scroll/200) + "px)"
-	});
-});
+// $(window).scroll(function() {
+//   var scroll = $(window).scrollTop();
+// 	$(".zoom img").css({
+// 		transform: 'translate3d(-50%, -'+(scroll/100)+'%, 0) scale('+(100 + scroll/20)/100+')',
+// 		// "-webkit-filter": "blur(" + (scroll/200) + "px)",
+// 		// filter: "blur(" + (scroll/200) + "px)"
+// 	});
+// });
 
