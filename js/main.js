@@ -1,6 +1,10 @@
 // Make it rain!
+$(document).ready(function() {
+	var projectNav = $('#project-nav').offset().top;
+	var designPosition = $('#nao-design').offset().top;
+	var image3Position = $('#nao-design-content-3').offset().top;
+	
 
-var projectNav = $('#project-nav').offset().top;
 
 // console.log(projectNav);
 
@@ -20,8 +24,21 @@ $(window).on('scroll', function() {
 	} else {
 		$('#project-nav').removeClass('scrolled');
 	}
-}); 
 
+	// $('#image1').css('top', image1 - (distanceScrolled * 1.5) + 1000);
+	if (distanceScrolled > designPosition - 600) {
+		$('#nao-image1').addClass('design-content-gallery-animation');
+	} else {
+		$('#nao-image1').removeClass('design-content-gallery-animation');
+	}
+
+	if (distanceScrolled > image3Position - 600) {
+		$('#nao-image3').addClass('design-content-gallery-animation');
+	} else {
+		$('#nao-image3').removeClass('design-content-gallery-animation');
+	}
+	
+}); 
 
 
 
@@ -35,3 +52,4 @@ $(window).on('scroll', function() {
 // 	});
 // });
 
+});
