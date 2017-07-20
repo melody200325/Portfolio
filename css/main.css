@@ -53,8 +53,12 @@ body, html {
 
   
 }
-
-
+.about-container-fluid, body {
+	background-image: -webkit-linear-gradient(left, #FFD7FB, #BCF9E6);
+	background-image: -moz-linear-gradient(left, #FFD7FB, #BCF9E6);
+	background-image: -o-linear-gradient(left, #FFD7FB, #BCF9E6);
+	background-image: linear-gradient(left, #FFD7FB, #BCF9E6);
+}
 
 a {
 	color: black;
@@ -229,6 +233,35 @@ button:hover:after {
 
 /* Home-Section 1 */
 
+
+.hero-text-title h1, .hero-text-sub h1 {
+  
+  letter-spacing: 5px;
+  max-width: 100%;
+  text-align: left;
+  background: -webkit-linear-gradient( left, #00ffff 0%, #97fba0 25%, #97b1fb 50%, #FFD7FB 100%) repeat;
+  -webkit-background-clip: text;
+  -ms-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-animation-name: masked-animation;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes masked-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8000px -3000px;
+  }
+}
 .container-fluid {
 	background: linear-gradient(to right,
     green, blue, indigo, violet)
@@ -252,17 +285,22 @@ button:hover:after {
 	top: 50%;
 	z-index: 1;	
 }
+.nav-about-wrapper a, .nav-contact-wrapper a {
+	color: #595A5A;
+}
 
 .hero-text {
 	text-align: left;
 	color: #1E1F1F;
 	margin: 15px;
 	margin-bottom: 0px;
+
+
 		
 }
 
 .hero-text-title {
-	padding-top: 100px;
+	padding-top: 70px;
 
 }
 
@@ -271,6 +309,7 @@ button:hover:after {
 }
 .nav-about-wrapper h3, .nav-contact-wrapper h3 {
 	transform: rotate(-90deg);
+
 }
 
 .nav-about-wrapper {
@@ -286,12 +325,16 @@ button:hover:after {
 	text-align: center;
 	padding: 15px;
 	margin: 20px
+
+}
+.scroll-down-btn h4, .scroll-down-btn a {
+	color: #595A5A;
 }
 
 .container-fluid {
     /* The image used */
-    background-image: url("../img/home-hero.jpg");
-
+    /*background-image: url("../img/home-hero.jpg");*/
+	background-color: #202020;
     /* Set a specific height */
     min-height: 500px; 
 
@@ -329,6 +372,7 @@ article {
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 	width: 1440px;
+
 
 
 }
@@ -383,6 +427,7 @@ article {
 }
 
 /* About */
+
 .about-container-fluid {
 	background-color: #22FBCC;
 	position: relative;
@@ -472,7 +517,7 @@ article {
 
 .home-logo {
 	padding-left: 40px;
-	padding-top: 40px;
+	padding-top: 18px;
 	position: fixed;
 	z-index: 120;
 	
