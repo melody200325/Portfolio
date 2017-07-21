@@ -52,7 +52,7 @@ $(window).on('scroll', function() {
 
 });
 
-$(document).ready(function() {
+
 
 	var sap1Position = $('#sap-design').offset().top;
 	var sap2Position = $('#sap-design-content-2').offset().top;
@@ -86,4 +86,3 @@ if (distanceScrolled > sap1Position - 600) {
 		$('#sap-image7').removeClass('sap-design-content-gallery-animation1');
 	}
 }); 
-});
