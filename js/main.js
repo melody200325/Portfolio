@@ -3,7 +3,6 @@ $(document).ready(function() {
 	var projectNav = $('#project-nav').offset().top;
 	var designPosition = $('#nao-design').offset().top;
 	var image3Position = $('#nao-design-content-3').offset().top;
-	
 
 
 // console.log(projectNav);
@@ -11,7 +10,7 @@ $(document).ready(function() {
 $(window).on('scroll', function() {
 	
 	var distanceScrolled = $(window).scrollTop();
-	console.log('The distance from the top of the page to the nav is: ' + projectNav);
+	// console.log('The distance from the top of the page to the nav is: ' + projectNav);
 	console.log('The distance scrolled is: ' + distanceScrolled);
 
 
@@ -27,19 +26,18 @@ $(window).on('scroll', function() {
 
 	// $('#image1').css('top', image1 - (distanceScrolled * 1.5) + 1000);
 	if (distanceScrolled > designPosition - 600) {
-		$('#nao-image1').addClass('design-content-gallery-animation');
+		$('#nao-image1').addClass('nao-design-content-gallery-animation');
 	} else {
-		$('#nao-image1').removeClass('design-content-gallery-animation');
+		$('#nao-image1').removeClass('nao-design-content-gallery-animation');
 	}
 
 	if (distanceScrolled > image3Position - 600) {
-		$('#nao-image3').addClass('design-content-gallery-animation');
+		$('#nao-image3').addClass('nao-design-content-gallery-animation');
 	} else {
-		$('#nao-image3').removeClass('design-content-gallery-animation');
+		$('#nao-image3').removeClass('nao-design-content-gallery-animation');
 	}
-	
-}); 
 
+}); 
 
 
 
@@ -53,3 +51,38 @@ $(window).on('scroll', function() {
 // });
 
 });
+
+
+
+	var sap1Position = $('#sap-design').offset().top;
+	var sap2Position = $('#sap-design-content-2').offset().top;
+	var sap3Position = $('#sap-design-content-4').offset().top;
+$(window).on('scroll', function() {
+
+var distanceScrolled = $(window).scrollTop();
+
+
+if (distanceScrolled > sap1Position - 600) {
+		$('#sap-image1').addClass('sap-design-content-gallery-animation1');
+		$('#sap-image2').addClass('sap-design-content-gallery-animation1');
+	} else {
+		$('#sap-image1').removeClass('sap-design-content-gallery-animation1');
+		$('#sap-image2').addClass('sap-design-content-gallery-animation1');
+	}
+
+	if (distanceScrolled > sap2Position - 600) {
+		$('#sap-image3').addClass('sap-design-content-gallery-animation1');
+		$('#sap-image4').addClass('sap-design-content-gallery-animation1');
+	} else {
+		$('#sap-image3').removeClass('sap-design-content-gallery-animation1');
+		$('#sap-image4').removeClass('sap-design-content-gallery-animation1');
+	}
+	if (distanceScrolled > sap3Position - 600) {
+		$('#sap-image6').addClass('sap-design-content-gallery-animation1');
+		$('#sap-image7').addClass('sap-design-content-gallery-animation1');
+
+	} else {
+		$('#sap-image6').removeClass('sap-design-content-gallery-animation1');
+		$('#sap-image7').removeClass('sap-design-content-gallery-animation1');
+	}
+}); 
