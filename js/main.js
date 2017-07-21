@@ -53,12 +53,10 @@ $(window).on('scroll', function() {
 });
 
 
-
+$(window).on('scroll', function() {
 	var sap1Position = $('#sap-design').offset().top;
 	var sap2Position = $('#sap-design-content-2').offset().top;
 	var sap3Position = $('#sap-design-content-4').offset().top;
-$(window).on('scroll', function() {
-
 var distanceScrolled = $(window).scrollTop();
 
 
