@@ -956,6 +956,7 @@ left: 0;
 	background-color: #454BE9;
 	padding-top: 80px;
 	min-height: 540px;
+	text-align: left;
 
 }
 
@@ -972,6 +973,6 @@ left: 0;
 		
 }
 
-.design-content-6 {
+#trip-design .design-content-6 {
 	text-align: center;
 }
