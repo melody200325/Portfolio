@@ -580,7 +580,7 @@ article {
 width: 100%;
 background-color: white;
 
-transition: all 400ms ease-out;
+
 text-align: center;
 top:0;
 right:0;
@@ -689,7 +689,7 @@ left: 0;
 	margin-top: 40px;
 	padding-bottom: 40px;
 }
-.design-content-gallery {
+#nao-design .design-content-gallery {
 	position: absolute;
 	left: 500px; 
 	width:100%;
@@ -697,7 +697,7 @@ left: 0;
 	transition: all 0.5s ease-in;
 
 }
-.nao-design-content-gallery-animation {
+#nao-design .nao-design-content-gallery-animation {
 	left: 0;
 }
 .design-content-2 {
@@ -732,7 +732,7 @@ left: 0;
 
 .design-content-4 {
 	padding: 50px 60px;
-	
+	text-align: center;
 	
 }
 
@@ -749,6 +749,7 @@ left: 0;
  	padding-top: 40px;
 
  }
+
 .project-next-btn button {
 	
 	display: flex;
@@ -917,14 +918,60 @@ left: 0;
 
 }
 
+/* Project 3 Tripwave */
 
+#trip-design .design-content-1 {
+	color: white;
+	background-color: #454BE9;
+	min-height: 830px;
+}
 
+#trip-design .design-content-gallery {
+	position: absolute;
+	left: 500px; 
+	width:100%;
+	transition: all 0.5s ease-in;
+}
 
+#trip-design .trip-design-content-gallery-animation {
+	left: 0;
+}
 
+#trip-design .design-content-2 {
+	text-align: left;
+	background-color: #F0F4F3;
+	min-height: 800px;
+}
 
+#trip-design .design-content-3 {
 
+	text-align: center;
+	background-color: white;
+	
+}
 
+#trip-design .design-content-4 {
+	
+	color: white;
+	background-color: #454BE9;
+	padding-top: 80px;
+	min-height: 540px;
 
+}
 
+#trip-design .design-content-5 {
+	background-color: #F0F4F3;
+	padding-top: 80px;
+	min-height: 540px;
+	padding: 80px 60px;
 
+}
 
+#trip-design .design-content-6 {
+	padding: 50px 60px;
+		
+}
+
+.design-content-6 {
+	text-align: center;
+}
