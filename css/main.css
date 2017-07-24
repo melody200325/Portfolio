@@ -11,33 +11,89 @@
 }
 
 /* Fix for responsive images */
-@media screen (max-width: 600px) {
-	.container-fluid {
-		width: 100%;
-	}
+
+@media screen and (max-width: 600px) {
+.la{
+	
+	display: flex
+	flex-wrap:wrap;
+
+
 }
 
-@media screen (max-width: 600px) {
-	.container-fluid-intro .project1-intro {
-		width: 100%;
-	}
+#container-fluid-intro {
+	padding: 0;
+	margin: 0;
+
+
+
+
+
 }
 
-@media screen (max-width: 600px){
+.container-fluid-intro .row{
+	width: 100%;
+	
+	display: inline-flex;
+	left: 0;
+	right: 0;
 
-.container-fluid-intro img {
+
+
+
+}
+
+
+.nav {
+	display: none;
+}
+.container-fluid-intro .col-xs-1 {
 	position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: auto;
-}	
+	left: 0;
+	right: 0;
+
+		
+}
+
+
+.container-fluid-intro .project-number-indicator {
+	display: none;
+	
+}
+
+.view-project-btn button {
+	left: 200px;
+
 
 }
 
+#container-fluid-intro .col-md-6 {
+
+	padding: 0;
+	margin: 0;
+	
+
+
+
+	
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.row {
+     margin-left: 0;
+     margin-right: 0;
+}
 
 
 img {
@@ -48,12 +104,14 @@ img {
 /* home-Basic */
 
 body, html {
-  height: 100%
+  height: 100%;
+  
   
 
   
 }
 .about-container-fluid, body {
+	
 	background-image: -webkit-linear-gradient(left, #FFD7FB, #BCF9E6);
 	background-image: -moz-linear-gradient(left, #FFD7FB, #BCF9E6);
 	background-image: -o-linear-gradient(left, #FFD7FB, #BCF9E6);
@@ -333,10 +391,10 @@ button:hover:after {
 }
 .container-fluid {
     /* The image used */
-    /*background-image: url("../img/test-hero.jpg");*/
-	background-color: #202020;
+    background-image: url("../img/test2.jpg");
+	/*background-color: #202020;*/
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 740px; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -655,7 +713,7 @@ left: 0;
 	padding-bottom: 40px;
 }
 
-.secondary-content-1 h2 , .secondary-content-2 h2, .design-content-3 h2{
+.secondary-content-1 h2 , .secondary-content-2 h2, .design-content-3 h2 {
 	font-size: 24px;
 }
 
@@ -689,16 +747,23 @@ left: 0;
 	margin-top: 40px;
 	padding-bottom: 40px;
 }
+
+
+.design-content-gallery {
+
+}
 #nao-design .design-content-gallery {
+	display: none;
 	position: absolute;
 	left: 500px; 
 	width:100%;
-	
 	transition: all 0.5s ease-in;
 
 }
 #nao-design .nao-design-content-gallery-animation {
+	display: block;
 	left: 0;
+	
 }
 .design-content-2 {
 	
@@ -822,27 +887,9 @@ left: 0;
 	font-size: 20px;
 	margin-top: 0;
 }
-/*.design-content-1 {
-	
-	padding-top: 40px;
-	padding-bottom: 80px;
-	background-color: #eebac6;
-	min-height: 680px;
-}
-
-.design-content-gallery {
-	position: absolute;
-	left: 500px; 
-	width:100%;
-	transition: all 0.5s ease-in;
-}*/
-
-
-/*.nao-design-content-gallery-animation {*/
-/*	left: 0;
-}*/
 
 .design-content-gallery-1 {
+	display: none;
 	position: absolute;
 	left: 500px;
 	width: 100%;
@@ -850,6 +897,7 @@ left: 0;
 	
 }
 .design-content-gallery-2 {
+	display: none;
 	position: absolute;
 	left: 500px;
 	width: 100%;
@@ -858,6 +906,7 @@ left: 0;
 }
 
 .sap-design-content-gallery-animation1 {
+	display: block;
 	left: 0;
 }
 
@@ -927,6 +976,7 @@ left: 0;
 }
 
 #trip-design .design-content-gallery {
+	display: none;
 	position: absolute;
 	left: 500px; 
 	width:100%;
@@ -935,6 +985,7 @@ left: 0;
 
 #trip-design .trip-design-content-gallery-animation {
 	left: 40px;
+	display: block;
 }
 
 #trip-design .design-content-2 {
