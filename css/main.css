@@ -13,42 +13,65 @@
 /* Fix for responsive images */
 
 @media screen and (max-width: 600px) {
-.la{
+#nav .nav-about-wrapper, #nav .nav-contact-wrapper {
+	position: absolute;
+	text-decoration: none;
+	top:10px;
+	transform: rotate(90deg);
+	padding-left:50px
 	
-	display: flex
-	flex-wrap:wrap;
-
-
 }
 
+
+
+#project1-intro-img {
+	left: 10px;
+}
 #container-fluid-intro {
+
 	padding: 0;
 	margin: 0;
-
-
+	padding-bottom: 300px;
+	top:0;
 
 
 
 }
 
-.container-fluid-intro .row{
-	width: 100%;
-	
-	display: inline-flex;
+#container-fluid-intro .row{	
+	display: flex;
 	left: 0;
 	right: 0;
+	top: 0;
+
 
 
 
 
 }
-
-
-.nav {
-	display: none;
-}
-.container-fluid-intro .col-xs-1 {
+.view-project-btn button{
 	position: absolute;
+	left: 220px;
+	top: 430px;
+	
+	
+
+}
+.project-home-content h1, .project-home-content h4 {
+	font-size: 18px;
+	min-width: 400px;
+	position: absolute;
+	text-align: center;
+	top: 280px
+}
+.project-home-content h1 {
+	font-size: 32px;
+}
+
+
+
+.container-fluid-intro .col-xs-1 {
+	
 	left: 0;
 	right: 0;
 
@@ -56,26 +79,27 @@
 }
 
 
-.container-fluid-intro .project-number-indicator {
+.project-number-indicator {
 	display: none;
 	
 }
 
-.view-project-btn button {
-	left: 200px;
 
-
-}
 
 #container-fluid-intro .col-md-6 {
-
+	right:0;
+	top: 20px;
 	padding: 0;
 	margin: 0;
 	
 
+}
 
 
-	
+.col-xs-12 .project1-intro-img {
+	right: 0;
+
+}
 
 
 
@@ -116,7 +140,7 @@ body, html {
 	background-image: -moz-linear-gradient(left, #FFD7FB, #BCF9E6);
 	background-image: -o-linear-gradient(left, #FFD7FB, #BCF9E6);
 	background-image: linear-gradient(left, #FFD7FB, #BCF9E6);
-	position: relative;
+	
 
 }
 
@@ -342,6 +366,20 @@ button:hover:after {
 	
 
 	color: #76F2D4;
+}
+
+
+.nav-about-wrapper h3, .nav-contact-wrapper h3 {
+	transform: rotate(-90deg);
+
+}
+
+.nav-about-wrapper {
+	left: 15px;
+}
+
+.nav-contact-wrapper {
+	right: 15px;
 }
 .hero-text {
 	text-align: left;
@@ -753,7 +791,7 @@ left: 0;
 
 }
 #nao-design .design-content-gallery {
-	display: none;
+	/*display: none;*/
 	position: absolute;
 	left: 500px; 
 	width:100%;
@@ -889,16 +927,16 @@ left: 0;
 }
 
 .design-content-gallery-1 {
-	display: none;
-	position: absolute;
+/*	display: none;
+*/	position: absolute;
 	left: 500px;
 	width: 100%;
 	transition: all 0.5s ease-in;
 	
 }
 .design-content-gallery-2 {
-	display: none;
-	position: absolute;
+/*	display: none;
+*/	position: absolute;
 	left: 500px;
 	width: 100%;
 	transition: all 0.5s ease-in;
@@ -976,7 +1014,7 @@ left: 0;
 }
 
 #trip-design .design-content-gallery {
-	display: none;
+	/*display: none;*/
 	position: absolute;
 	left: 500px; 
 	width:100%;
