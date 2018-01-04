@@ -1066,3 +1066,37 @@ left: 0;
 #trip-design .design-content-6 {
 	text-align: center;
 }
+
+/* Project 4 Wild Adventure */
+
+.project-challenge-content h2 {
+	font-size: 24px;
+	padding-top: 30px;
+	padding-bottom: 5px;
+
+}
+
+.secondary-content-gallery-half img {
+	padding-bottom: 0px;
+}
+
+#Carousel-1 i {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wild-project-process .secondary-content-2 {
+	padding-top: 40px;
+
+}
+#wild-design-content-5 {
+	background-color: white;
+	width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    min-height: 580px;
+
+
+}
