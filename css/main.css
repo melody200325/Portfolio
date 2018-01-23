@@ -151,8 +151,8 @@ a {
 
 h1 {
 	
-	font-size: 48px;
-	line-height: 65px;
+	font-size: 42px;
+	line-height: 58px;
 	font-family: 'playfair display', serif;
 	font-weight: 700;
 	letter-spacing: 2px;
@@ -319,7 +319,7 @@ button:hover:after {
 /* Header text animation */
 .hero-text-title h1, .hero-text-sub h1 {
   
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   max-width: 100%;
   text-align: left;
   background: -webkit-linear-gradient( left, #00ffff 0%, #97fba0 25%, #97b1fb 50%, #FFD7FB 100%) repeat;
@@ -392,12 +392,12 @@ button:hover:after {
 }
 
 .hero-text-title {
-	padding-top: 70px;
+	padding-top: 35px;
 
 }
 
 .hero-text-sub {
-	padding-bottom: 20px
+	padding-bottom: 1px
 }
 .nav-about-wrapper h3, .nav-contact-wrapper h3 {
 	transform: rotate(-90deg);
@@ -415,7 +415,7 @@ button:hover:after {
 .scroll-down-btn {
 	
 	text-align: center;
-	padding: 15px;
+	padding: 5px;
 	margin: 20px
 
 }
