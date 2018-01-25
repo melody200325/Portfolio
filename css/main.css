@@ -429,8 +429,8 @@ button:hover:after {
 }
 .container-fluid {
     /* The image used */
-    background-image: url("../img/test2.jpg");
-	/*background-color: #202020;*/
+    /*background-image: url("../img/test2.jpg");*/
+	background-color: #161923;
     /* Set a specific height */
     min-height: 740px; 
 
@@ -1186,3 +1186,14 @@ left: 0;
 	padding-top: 60px;
 	
 }
+
+#museum-vid iframe {
+ 	padding-top: 20px;
+ 	padding-bottom: 100px;
+    margin-left: 15%; 
+
+
+
+   
+
+ }
