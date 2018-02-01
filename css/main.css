@@ -1190,10 +1190,13 @@ left: 0;
 #museum-vid iframe {
  	padding-top: 20px;
  	padding-bottom: 100px;
-    margin-left: 15%; 
-
-
-
-   
+    margin-left: 15%
 
  }
+
+  #turf-vid iframe {
+  	padding-top: 20px;
+ 	padding-bottom: 100px;
+    margin-left: 20%
+
+  }
