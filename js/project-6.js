@@ -25,15 +25,19 @@ $(window).on('scroll', function() {
 		$('#project-nav').removeClass('scrolled');
 	}
 
-	var demoTrigger = document.querySelector('.demo-trigger');
-var paneContainer = document.querySelector('.detail');
-
-new Drift(demoTrigger, {
-  paneContainer: paneContainer,
-  inlinePane: false
+//manify//
+(document).ready(function() {
+  $('.zoom').magnify();
 });
 
-// project-1 webflow animation
+$(document).ready(function() {
+  $('.zoom').magnify({
+    speed: 200,
+    src: 'images/product-large.jpg'
+  });
+});
+// 
+//project-1 webflow animation//
 
 // 	$('#image1').css('top', image1 - (distanceScrolled * 1.5) + 1000);
 // 	if (distanceScrolled > designPosition - 600) {
@@ -52,8 +56,8 @@ new Drift(demoTrigger, {
 
 
 
-}); 
-}); 
+// }); 
+// }); 
 
 
 
