@@ -350,6 +350,7 @@ button:hover:after {
 	display: flex;
 }
 
+
 .nav-about-wrapper, .nav-contact-wrapper {
 	position: fixed;
 	text-decoration: none;
@@ -576,7 +577,7 @@ article {
 	height: 360px;
 }
 .contact-container-fluid {
-	background-color: 3;
+	background-color: #22FBCC;
 }
 .contact-container-fluid h3 {
 	font-size: 36px;
