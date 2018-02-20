@@ -2,7 +2,7 @@
 $(document).ready(function() {
 	var projectNav = $('#project-nav').offset().top;
 	var designPosition = $('#turf-design').offset().top;
-	var image3Position = $('#turf-design-content-5').offset().top;
+	var image3Position = $('#turf-design-content-5').offset().top;z
 	
 
 
