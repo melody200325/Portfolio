@@ -98,8 +98,6 @@ $(window).on('scroll', function() {
 
 
 
-}); 
-}); 
 
 
 
