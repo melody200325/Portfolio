@@ -1,79 +1,9 @@
 // Make it rain!
-//manify//
-(document).ready(function() {
-  $('.zoom').magnify();
-});
-
-$(document).ready(function() {
-  $('.zoom').magnify({
-    speed: 200,
-    src: 'images/product-large.jpg'
-  });
-});
-
-(function ($) {
-	"use strict";
-
-    jQuery(document).ready(function($){
-
-
-        $(".embed-responsive iframe").addClass("embed-responsive-item");
-        $(".carousel-inner .item:first-child").addClass("active");
-        
-        $('[data-toggle="tooltip"]').tooltip();
-
-
-        
-        
-        
-        
-        
-        
-        
-  $('.tile')
-    // tile mouse actions
-    .on('mouseover', function(){
-      $(this).children('.photo').css({'transform': 'scale('+ $(this).attr('data-scale') +')'});
-    })
-    .on('mouseout', function(){
-      $(this).children('.photo').css({'transform': 'scale(1)'});
-    })
-    .on('mousemove', function(e){
-      $(this).children('.photo').css({'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'});
-    })
-    // tiles set up
-    .each(function(){
-      $(this)
-        // add a photo container
-        .append('<div class="photo"></div>')
-        // some text just to show zoom level on current item in this example
-        .append('<div class="txt"><div class="x">'+ $(this).attr('data-scale') +'x</div>ZOOM ON<br>HOVER</div>')
-        // set up a background image for each tile based on data-image attribute
-        .children('.photo').css({'background-image': 'url('+ $(this).attr('data-image') +')'});
-    })
-
-
-        
-
-
-    });
-
-
-    jQuery(window).load(function(){
-
-        
-    });
-
-
-}(jQuery));	
-
-
 $(document).ready(function() {
 	var projectNav = $('#project-nav').offset().top;
 	var designPosition = $('#turf-design').offset().top;
 	var image3Position = $('#turf-design-content-5').offset().top;z
 	
-
 
 
 // console.log(projectNav);
@@ -86,7 +16,6 @@ $(window).on('scroll', function() {
 
 
 
-
 // Code to stick nav to top
 
 	
@@ -96,28 +25,17 @@ $(window).on('scroll', function() {
 		$('#project-nav').removeClass('scrolled');
 	}
 
-	if (distanceScrolled > designPosition - 600) {
-		$('#tuf-image1').addClass('nao-design-content-gallery-animation');
-	} else {
-		$('#turf-image1').removeClass('nao-design-content-gallery-animation');
-	}
+//manify//
+(document).ready(function() {
+  $('.zoom').magnify();
+});
 
-	if (distanceScrolled > image3Position - 600) {
-		$('#turf-image3').addClass('nao-design-content-gallery-animation');
-	} else {
-		$('#turf-image3').removeClass('nao-design-content-gallery-animation');
-	}
-
- 
-
-
-
-}); 
-
-}); 
-
-
-
+$(document).ready(function() {
+  $('.zoom').magnify({
+    speed: 200,
+    src: 'images/product-large.jpg'
+  });
+});
 // 
 //project-1 webflow animation//
 
