@@ -1243,6 +1243,7 @@ left: 0;
 	color: white;
 	background-color: #5BC388;
 	min-height: 650px;
+	margin-top: 5%;
 }
 #wild-design .design-content-3 {
 	
@@ -1329,6 +1330,7 @@ left: 0;
 	color: white;
 	background-color: #B3B7EC;
 	min-height: 650px;
+	margin-top: 5%;
 }
 
 #turf-design .design-content-3 {
@@ -1415,6 +1417,7 @@ left: 0;
 .txt {
 	display: none;
 }
+
 
 
 
