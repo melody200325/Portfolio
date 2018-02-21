@@ -605,12 +605,13 @@ article {
 	overflow: hidden;
 	padding-bottom: 100%;
 }
-.zoom img{
+.zoom img {
 	position: fixed;
 	top: 0%;
-	left: 50%;
+	left: 0;
 	max-width: 100%;
-	transform: translateX(-50%);
+	transform: unset;
+	width: 100%;
 }
 #zoom-1 {
 	background: #eebac6;
@@ -1040,8 +1041,7 @@ left: 0;
 }
 #project-2 .design-content-4 {
 	padding: 0px 60px 100px 0px;
-	height: 1320px;
-
+	height: auto;
 }
 
 /* Project 3 Tripwave */
@@ -1049,7 +1049,7 @@ left: 0;
 #trip-design .design-content-1 {
 	color: white;
 	background-color: #454BE9;
-	min-height: 830px;
+	min-height: 1000px;
 }
 
 #trip-design .design-content-gallery {
@@ -1068,7 +1068,7 @@ left: 0;
 #trip-design .design-content-2 {
 	text-align: left;
 	background-color: #F0F4F3;
-	min-height: 800px;
+	min-height: 1000px;
 }
 
 #trip-design .design-content-3 {
@@ -1157,10 +1157,9 @@ left: 0;
 #project-4 .design-content-2 {
 	background-color: #99ede7;
 	margin-top: 0;
-	margin-bottom:0; 
-	height: 1360px;
+	margin-bottom: 0;
+	height: auto;
 	text-align: center;
-
 }
 
 #project-4 .design-content-3 {
@@ -1404,11 +1403,7 @@ left: 0;
     font-size: 32px;
     line-height: 32px;
   }
-.tiles-seccc {
-	position: relative;
-	height: 499px;
-	width: 100%;
-}
+
 .tiles-seccc.tnd {
 	height: 591px;
 }
@@ -1416,9 +1411,7 @@ left: 0;
 .tiles-seccc.tndee {
 	height: 973px;
 }
-.tiles-seccc.fthh {
-	height: 530px;
-}
+
 .txt {
 	display: none;
 }
@@ -1443,8 +1436,14 @@ left: 0;
 @media only screen and (min-width: 1300px){ 
   
     
-   
-    
+   .tiles-seccc.fthh {
+	height: 753px;
+}
+.tiles-seccc {
+	position: relative;
+	height: 705px;
+	width: 100%;
+}  
     
 }
 
