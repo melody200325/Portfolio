@@ -1,30 +1,4 @@
 // Make it rain!
-$(document).ready(function() {
-	var projectNav = $('#project-nav').offset().top;
-	var designPosition = $('#turf-design').offset().top;
-	var image3Position = $('#turf-design-content-5').offset().top;z
-	
-
-
-// console.log(projectNav);
-
-$(window).on('scroll', function() {
-	
-	var distanceScrolled = $(window).scrollTop();
-	console.log('The distance from the top of the page to the nav is: ' + projectNav);
-	console.log('The distance scrolled is: ' + distanceScrolled);
-
-
-
-// Code to stick nav to top
-
-	
-	if (distanceScrolled > projectNav) {
-		$('#project-nav').addClass('scrolled');
-	} else {
-		$('#project-nav').removeClass('scrolled');
-	}
-
 //manify//
 (document).ready(function() {
   $('.zoom').magnify();
@@ -92,6 +66,58 @@ $(document).ready(function() {
 
 
 }(jQuery));	
+
+
+$(document).ready(function() {
+	var projectNav = $('#project-nav').offset().top;
+	var designPosition = $('#turf-design').offset().top;
+	var image3Position = $('#turf-design-content-5').offset().top;z
+	
+
+
+
+// console.log(projectNav);
+
+$(window).on('scroll', function() {
+	
+	var distanceScrolled = $(window).scrollTop();
+	console.log('The distance from the top of the page to the nav is: ' + projectNav);
+	console.log('The distance scrolled is: ' + distanceScrolled);
+
+
+
+
+// Code to stick nav to top
+
+	
+	if (distanceScrolled > projectNav) {
+		$('#project-nav').addClass('scrolled');
+	} else {
+		$('#project-nav').removeClass('scrolled');
+	}
+
+	if (distanceScrolled > designPosition - 600) {
+		$('#tuf-image1').addClass('nao-design-content-gallery-animation');
+	} else {
+		$('#turf-image1').removeClass('nao-design-content-gallery-animation');
+	}
+
+	if (distanceScrolled > image3Position - 600) {
+		$('#turf-image3').addClass('nao-design-content-gallery-animation');
+	} else {
+		$('#turf-image3').removeClass('nao-design-content-gallery-animation');
+	}
+
+ 
+
+
+
+}); 
+
+}); 
+
+
+
 // 
 //project-1 webflow animation//
 
